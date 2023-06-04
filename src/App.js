@@ -1,6 +1,8 @@
 import "./App.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faPlay, faInfoCircle } from "@fortawesome/free-solid-svg-icons"
+import MoreInfoButton from "./Header/MoreInfoButton/MoreInfoButton";
+import DrinkButton from "./Header/DrinkButton/DrinkButton";
 
 const App = () => {
   return (
@@ -41,16 +43,10 @@ const App = () => {
         </p>
         <ul className="controls">
           <li>
-            <button className="primary-action">
-            <FontAwesomeIcon icon={faPlay} />
-            <span>Drink</span>
-            </button>
+          <DrinkButton />
           </li>
           <li>
-            <button className="secondary-action">
-              <FontAwesomeIcon icon={faInfoCircle} />
-              <span>More Info</span>
-            </button>
+          <MoreInfoButton />
           </li>
         </ul>
       </div>
