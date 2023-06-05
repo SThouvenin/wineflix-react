@@ -3,11 +3,14 @@ import Header from "./Header/Header";
 import Wines from "./Wines/Wines";
 
 const App = () => {
+
   return (
-    <div className="App">
-      <Header />
-      <Wines />
-    </div>
+    <>
+      <div className="App">
+        <Header />
+        <Wines />
+      </div>
+    </>
   );
 };
 

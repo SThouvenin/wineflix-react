@@ -118,11 +118,6 @@ const Wines = () => {
     filterWines();
   }, []);
 
-  useEffect(() => {
-    console.log(drinkAgainArray);
-    console.log(keepDrinkingArray);
-  }, [drinkAgainArray, keepDrinkingArray]);
-
   return (
     <>
       {drinkAgainArray && (
