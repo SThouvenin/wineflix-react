@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./Header/Header";
+import WineListing from "./Wines/WineListing/WineListing";
 import Wines from "./Wines/Wines";
 
 const App = () => {
@@ -108,7 +109,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      <Wines />
+      <WineListing imageUrl={wines.imageUrl} id={wines.id} progress={wines.progress} isNew={wines.isNew} />
     </div>
   );
 };
