@@ -1,6 +1,6 @@
 import WineCard from "../WineCard/WineCard";
 
-const WineListing = ({src, alt, imageUrl, imageName, isNew, progress, id}) => {
+const WineListing = ({imageUrl, imageName, isNew, progress, id}) => {
     return (
         <section className="category">
           <h2>Drink Again</h2>

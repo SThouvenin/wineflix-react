@@ -1,7 +1,7 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import Header from "./Header/Header";
 import WineListing from "./Wines/WineListing/WineListing";
-import Wines from "./Wines/Wines";
 
 const App = () => {
   const wines = [
@@ -106,10 +106,29 @@ const App = () => {
     },
   ];
 
+  const [drinkAgainArray, setDrinkAgainArray] = useState([]);
+  const [keepDrinkingArray, setKeepDrinkingArray] = useState([]);
+
+  useEffect(() => {
+    const filterWines = () => {
+      const drinkAgain = wines.filter((wine) => wine.isFinished);
+      const keepDrinking = wines.filter((wine) => wine.progress);
+
+      setDrinkAgainArray(drinkAgain);
+      setKeepDrinkingArray(keepDrinking);
+    };
+
+    filterWines();
+  }, []);
+
+  useEffect(() => {
+    console.log(drinkAgainArray);
+    console.log(keepDrinkingArray);
+  }, [drinkAgainArray, keepDrinkingArray])
   return (
     <div className="App">
       <Header />
-      <WineListing imageUrl={wines.imageUrl} id={wines.id} progress={wines.progress} isNew={wines.isNew} />
+      <WineListing imageUrl={wines.imageUrl} id={wines.id} progress={wines?.progress} isNew={wines?.isNew} />
     </div>
   );
 };

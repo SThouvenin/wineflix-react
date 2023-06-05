@@ -1,6 +1,6 @@
-const WineImage = ({src, alt, imageUrl, imageName, isNew}) => {
+const WineImage = ({ imageUrl, imageName, isNew}) => {
     return (
-        <img src={src} alt={alt} imageUrl={imageUrl} imageName={imageName} isNew={isNew} />
+        <img src={imageUrl} alt={imageName} isNew={isNew} />
     );
 }
 
