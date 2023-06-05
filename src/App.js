@@ -1,38 +1,14 @@
 import "./App.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faPlay, faInfoCircle } from "@fortawesome/free-solid-svg-icons"
 import MoreInfoButton from "./Header/MoreInfoButton/MoreInfoButton";
 import DrinkButton from "./Header/DrinkButton/DrinkButton";
+import Header from "./Header/Header";
 
 const App = () => {
   return (
   <div className="App">
     <header className="hero">
       <img className="hero-image" src="/wine-hero.webp" alt="Wine bottles" />
-      <nav className="navigation">
-        <section className="primary-navigation">
-          <h1>WineFlix</h1>
-          <ul className="navigation-links">
-            <li className="active">
-              <a href="https://developer.mozilla.org">Home</a>
-            </li>
-            <li>
-              <a href="https://developer.mozilla.org">Whites</a>
-            </li>
-            <li>
-              <a href="https://developer.mozilla.org">Reds</a>
-            </li>
-            <li>
-              <a href="https://developer.mozilla.org">Blends</a>
-            </li>
-          </ul>
-        </section>
-        <section className="secondary-navigation">
-          <span className="user-avatar">
-            <a href="https://developer.mozilla.org">S</a>
-          </span>
-        </section>
-      </nav>
+<Header />
       <div className="hero-content">
         <h2>
           <img alt="Rex Goliath" src="/rex-goliath-logo.png" />
