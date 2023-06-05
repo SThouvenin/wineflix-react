@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/wineflix-react/static/css/main.49eeda47.chunk.css",
+    "main.js": "/wineflix-react/static/js/main.4e98a0b9.chunk.js",
+    "main.js.map": "/wineflix-react/static/js/main.4e98a0b9.chunk.js.map",
+    "runtime-main.js": "/wineflix-react/static/js/runtime-main.01c313ce.js",
+    "runtime-main.js.map": "/wineflix-react/static/js/runtime-main.01c313ce.js.map",
+    "static/js/2.d629e52e.chunk.js": "/wineflix-react/static/js/2.d629e52e.chunk.js",
+    "static/js/2.d629e52e.chunk.js.map": "/wineflix-react/static/js/2.d629e52e.chunk.js.map",
+    "static/js/3.c53f8cb4.chunk.js": "/wineflix-react/static/js/3.c53f8cb4.chunk.js",
+    "static/js/3.c53f8cb4.chunk.js.map": "/wineflix-react/static/js/3.c53f8cb4.chunk.js.map",
+    "index.html": "/wineflix-react/index.html",
+    "static/css/main.49eeda47.chunk.css.map": "/wineflix-react/static/css/main.49eeda47.chunk.css.map",
+    "static/js/2.d629e52e.chunk.js.LICENSE.txt": "/wineflix-react/static/js/2.d629e52e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01c313ce.js",
+    "static/js/2.d629e52e.chunk.js",
+    "static/css/main.49eeda47.chunk.css",
+    "static/js/main.4e98a0b9.chunk.js"
+  ]
+}
