@@ -1,11 +1,12 @@
 import ProgressBar from "../ProgressBar/ProgressBar";
 import WineImage from "../WineImage/WineImage";
 
-const WineCard = ({ imageUrl, imageName, isNew, progress}) => {
+const WineCard = ({ wines}) => {
     return (
       <div className="wine">
-        <WineImage src={imageUrl} alt={imageName} imageUrl={imageUrl} imageName={imageName} isNew={isNew} />
-        <ProgressBar min={0} max={100} value={progress}/>
+        <WineImage src={wines.imageUrl} alt={wines.imageName} imageUrl={wines.imageUrl} imageName={wines.imageName} isNew={wines.isNew} />
+        {wines.progress && <><ProgressBar min={0} max={100} value={wines.progress}/></>}
+        
       </div>
     );
 }

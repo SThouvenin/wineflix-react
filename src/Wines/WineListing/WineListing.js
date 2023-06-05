@@ -1,13 +1,13 @@
 import WineCard from "../WineCard/WineCard";
 
-const WineListing = ({imageUrl, imageName, isNew, progress, id}) => {
+const WineListing = ({ sectionTitle, wines}) => {
     return (
         <section className="category">
-          <h2>Drink Again</h2>
+          <h2>{sectionTitle}</h2>
           <ul>
-            <li id={id}>
-                <WineCard imageUrl={imageUrl} imageName={imageName} isNew={isNew} progress={progress} />
-            </li>
+            {wines.map(wine => (<li key={wine.id}>
+                <WineCard wines={wines} />
+            </li>))}
           </ul>
         </section>
     );
